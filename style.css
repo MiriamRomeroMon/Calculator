@@ -1,0 +1,69 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #6e3aff, #ff6b6b); 
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    height: 500px;
+    width: 320px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.screen {
+    margin: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    background:rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+    height: 150px;
+    width: auto;
+}
+
+.buttons {
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr);
+    margin: 8px;
+    flex: 1; 
+}
+
+button {
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    margin: 3px;
+    cursor: pointer; /* el cursor cambia al pasar por encima */
+    font-size: 1.2rem;
+    color: white;
+}
+
+.operator {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 40px;
+}
+
+.zero, .equal {
+    grid-column: span 2;
+}
+
+.add {
+    grid-row: span 2;
+}
+
+.equal {
+    background-color: rgba(110, 58, 255, 0.7); /* morado principal del fondo */
+}
+
+.delete {
+    background-color: rgba(110, 58, 255, 0.3); /* morado más suave */
+}
+
