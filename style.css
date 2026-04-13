@@ -57,9 +57,6 @@ button {
     border-radius: 40px;
 }
 
-.zero, .equal {
-    grid-column: span 2;
-}
 
 .add {
     grid-row: span 2;
@@ -67,6 +64,7 @@ button {
 
 .equal {
     background-color: rgba(110, 58, 255, 0.7); /* morado principal del fondo */
+    grid-column: span 2;
 }
 
 .delete {
